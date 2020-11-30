@@ -14,5 +14,3 @@ RUN apt-get update \
         vim \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
-
-CMD ["sleep", "infinity]
