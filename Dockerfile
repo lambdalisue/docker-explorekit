@@ -1,16 +1,18 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
-        iputils-ping \
-        net-tools \
-        dnsutils \
-        netcat \
-        nmap \
-        tcpdump \
-        curl \
-        httpie \
-        postgresql-client \
-        vim \
+  ca-certificates \
+  curl \
+  dnsutils \
+  iputils-ping \
+  jq \
+  neovim \
+  net-tools \
+  netcat \
+  nmap \
+  openssh-client \
+  postgresql-client \
+  tcpdump \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
