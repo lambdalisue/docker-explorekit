@@ -7,7 +7,7 @@ My personal docker image to explore networks, containers, etc.
 ### With Docker
 
 ```console
-$ docker run --rm -it lambdalisue/explorekit -- tcpdump -A
+$ docker run --rm -it lambdalisue/explorekit tcpdump -A
 ```
 
 ### With Kubernetes (Sidecar)
